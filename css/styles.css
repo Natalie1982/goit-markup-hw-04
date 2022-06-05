@@ -128,8 +128,6 @@ body {
 }
 
 .contact-link {
-  display: block;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -140,6 +138,19 @@ body {
 .contact-link:focus {
   color: var(--accent-color);
 }
+.contact-icon {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.contact-icon:hover,
+.contact-icon:focus {
+  fill: var(--accent-color);
+}
+
 /*----------- Перша секція-HERO-ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА---------*/
 .hero {
   background: #2f303a;
@@ -224,7 +235,7 @@ body {
   display: block;
   height: 120px;
   outline: 1px solid red;
-  background-size: contain;
+  background-size: 70px 70px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
@@ -258,6 +269,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
 /*------------------------work--Чем мы занимаемся----------------------- */
 .work {
   padding-bottom: 94px;
@@ -319,11 +331,52 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 16px;
 }
 .team-box {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+/* ----------Іконки соцмереж команди------- */
+.team-coslink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-coslink-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-coslink-item {
+  display: block;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-right: 10px;
+}
+
+.coslink-icon {
+  fill: #afb1b8;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.coslink-icon:hover,
+.coslink-icon:focus {
+  fill: #ffffff;
+}
+.team-coslink-item:hover,
+.team-coslink-item:focus {
+  background: var(--accent-color);
+}
+.team-coslink-link {
+}
+/* ---------------Секція Клієнти */
 .client {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -349,9 +402,19 @@ body {
 }
 .item-client {
   outline: 1px solid #afb1b8;
-  max-width: 170px;
-  max-height: 92;
+  width: 170px;
+  height: 92px;
   padding: 32px 16px;
+}
+.client-icon {
+  fill: #afb1b8;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.client-icon:hover,
+.client-icon:focus {
+  fill: var(--accent-color);
 }
 
 /*----------------------footer--------------------- */
@@ -359,6 +422,13 @@ body {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer .container {
+  align-items: baseline;
+  display: flex;
+}
+.footer-address-box {
+  margin-right: 70px;
 }
 /* логотип-футер */
 
@@ -412,11 +482,12 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+/*-------- Іконки футера----- */
 .footer-soc-item {
   display: block;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 12px;
   border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
 }
 .footer-soc-item:hover,
 .footer-soc-item:focus {
@@ -427,11 +498,17 @@ body {
   display: flex;
   margin-left: auto;
 }
-.soc {
-  margin-right: 70px;
+.footer-soclink {
+  display: flex;
+  align-items: center;
+  display: block;
 }
+
 .footer-soc-list .footer-soc-item + .footer-soc-item {
   margin-left: 10px;
+}
+.footer-icon {
+  fill: #ffffff;
 }
 
 /*----------------------Сторінка 2 Портфолио- gallery--------------------- */
@@ -508,4 +585,13 @@ body {
 }
 .gallery-box {
   padding: 20px 24px;
+}
+.gallery-item {
+  border: 1px solid #eeeeee;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
