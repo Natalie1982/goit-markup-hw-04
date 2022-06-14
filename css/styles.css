@@ -133,6 +133,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+
+  /* display: flex;
+  align-items: center; */
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -140,25 +143,24 @@ body {
 }
 .contact-icon {
   margin-right: 10px;
-  fill: var(--primary-text-color);
+  /* fill: var(--primary-text-color); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+  fill: currentColor;
+  justify-content: center;
 }
 
-.contact-icon:hover,
+/* .contact-icon:hover,
 .contact-icon:focus {
   fill: var(--accent-color);
-}
+} */
 
 /*----------- Перша секція-HERO-ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА---------*/
 .hero {
   background: #2f303a;
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
   text-align: center;
-}
-.overlay {
   max-width: 1600px;
   max-height: 600px;
   margin-left: auto;
@@ -174,8 +176,8 @@ body {
     url(../img/hero.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
-  text-align: center;
 }
+
 .hero .container {
 }
 .hero-title {
@@ -252,7 +254,7 @@ body {
 /* --------------------advantage-icon------------- */
 .advantage-icon {
   display: flex;
-  width: 270px;
+
   height: 120px;
   border-radius: 4px;
   justify-content: center;
@@ -336,11 +338,7 @@ body {
   padding-bottom: 30px;
 }
 /* ----------Іконки соцмереж команди------- */
-.team-coslink {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-}
+
 .team-coslink-list {
   display: flex;
   justify-content: center;
@@ -366,7 +364,7 @@ body {
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
-  /* width: 100%; */
+  width: 100%;
   height: 100%;
   background: #fff;
   border-radius: 50%;
@@ -398,37 +396,27 @@ body {
 }
 .list-client {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
 .list-client .item-client + .item-client {
   margin-left: var(--typical-margin);
 }
 .item-client {
-  /* outline: 1px solid #afb1b8; */
   width: 170px;
   height: 92px;
-  /* padding: 32px 16px; */
 }
 .item-client-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: 1px solid #afb1b8;
+  border: 1px solid #afb1b8;
   width: 100%;
   height: 100%;
   border-radius: 4px;
 }
 .client-icon {
   fill: #afb1b8;
-  /* background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; */
 }
-/* .client-icon:hover,
-.client-icon:focus {
-  fill: var(--accent-color);
-} */
 
 .item-client-link:hover,
 .item-client-link:focus {
@@ -495,7 +483,6 @@ body {
 }
 .footer-title {
   margin-bottom: 20px;
-  text-align: center;
 
   font-weight: 700;
   font-size: 14px;
@@ -625,13 +612,17 @@ body {
 }
 .gallery-box {
   padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .gallery-item {
-  border: 1px solid #eeeeee;
 }
-
-.gallery-item:hover,
-.gallery-item:focus {
+.gallery-link {
+  display: block;
+}
+.gallery-link:hover,
+.gallery-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
